@@ -70,10 +70,10 @@ class DaftarIsiActivity : AppCompatActivity() {
             }
 
             btnLembarhasil.setOnClickListener {
-//                Intent(this@DaftarIsiActivity, BridgingActivity::class.java).also {
-//                    startActivity(it)
-//                }
-//                finish()
+                Intent(this@DaftarIsiActivity, LembarHasilActivity::class.java).also {
+                    startActivity(it)
+                }
+                finish()
             }
 
             btnMindmap.setOnClickListener {

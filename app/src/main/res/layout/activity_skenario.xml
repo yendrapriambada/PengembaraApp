@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AA9473"
+    tools:context=".SkenarioActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ayo_berkreasi" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/boldenvan"
+            android:gravity="center"
+            android:text="Skenario Perlawanan Portugis"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <TextView
+            android:id="@+id/tv_perintah1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="6dp"
+            android:text="Cerita berdurasi minimal 15 menit dan maksimal 20 menit."
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+        <TextView
+            android:id="@+id/tv_perintah2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="6dp"
+            android:text="Setiap karakter harus memiliki peran yang jelas."
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_perintah1" />
+
+        <TextView
+            android:id="@+id/tv_perintah3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="6dp"
+            android:text="Cerita berisi tentang perjuangan rakyat Aceh yang berprofesi sebagai pedagang, memiliki kapal dagang, memiliki senjata, dan meriam."
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_perintah2" />
+
+        <EditText
+            android:id="@+id/edt_jawaban_1"
+            android:layout_width="0dp"
+            android:layout_height="350dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/white"
+            android:hint="Masukkan jawaban disini"
+            android:inputType="textLongMessage|text"
+            android:paddingStart="10dp"
+            android:paddingTop="30dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_perintah3" />
+
+        <ImageView
+            android:id="@+id/tv_skenario"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="-20dp"
+            app:layout_constraintStart_toStartOf="@+id/edt_jawaban_1"
+            app:layout_constraintTop_toTopOf="@+id/edt_jawaban_1"
+            app:srcCompat="@drawable/skenario_title" />
+
+        <ImageView
+            android:id="@+id/btn_next"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_jawaban_1"
+            app:srcCompat="@drawable/button_next" />
+
+        <ImageView
+            android:id="@+id/btn_prev"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_jawaban_1"
+            app:srcCompat="@drawable/prev" />
+
+        <ImageView
+            android:id="@+id/btn_home"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_jawaban_1"
+            app:srcCompat="@drawable/home"
+            tools:visibility="visible" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

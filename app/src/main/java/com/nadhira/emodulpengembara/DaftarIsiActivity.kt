@@ -54,6 +54,56 @@ class DaftarIsiActivity : AppCompatActivity() {
                 }
                 finish()
             }
+
+            btnPerjuangan.setOnClickListener {
+                Intent(this@DaftarIsiActivity, PerjuanganActivity::class.java).also {
+                    startActivity(it)
+                }
+                finish()
+            }
+
+            btnSkenario.setOnClickListener {
+                Intent(this@DaftarIsiActivity, BridgingActivity::class.java).also {
+                    startActivity(it)
+                }
+                finish()
+            }
+
+            btnLembarhasil.setOnClickListener {
+//                Intent(this@DaftarIsiActivity, BridgingActivity::class.java).also {
+//                    startActivity(it)
+//                }
+//                finish()
+            }
+
+            btnMindmap.setOnClickListener {
+//                Intent(this@DaftarIsiActivity, BridgingActivity::class.java).also {
+//                    startActivity(it)
+//                }
+//                finish()
+            }
+
+            btnRefleksi.setOnClickListener {
+//                Intent(this@DaftarIsiActivity, BridgingActivity::class.java).also {
+//                    startActivity(it)
+//                }
+//                finish()
+            }
+
+            btnEvaluasi.setOnClickListener {
+//                Intent(this@DaftarIsiActivity, BridgingActivity::class.java).also {
+//                    startActivity(it)
+//                }
+//                finish()
+            }
+
+            btnPustaka.setOnClickListener {
+//                Intent(this@DaftarIsiActivity, BridgingActivity::class.java).also {
+//                    startActivity(it)
+//                }
+//                finish()
+            }
+
         }
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {

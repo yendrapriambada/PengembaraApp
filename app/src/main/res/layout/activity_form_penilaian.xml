@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AA9473"
+    tools:context=".FormPenilaianActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/form_penilaian" />
+
+        <ScrollView
+            android:id="@+id/tableLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="16dp"
+            android:scrollbars="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView1">
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dip"
+                android:scrollbars="horizontal|vertical">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="@+id/desc1"
+                    app:layout_constraintStart_toStartOf="@+id/desc1"
+                    app:layout_constraintTop_toBottomOf="@+id/desc1">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="180dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/border_table"
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:text="Pernyataan"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/border_table"
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:text="Ya"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:background="@drawable/border_table"
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:text="Tidak"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/black"
+                            android:padding="4dp"
+                            android:background="@drawable/border_table_outlined"
+                            android:text="Saya sudah mencoba untuk berani tampil di depan kelas."
+                            android:inputType="textMultiLine"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:padding="20dp"
+                            android:background="@drawable/border_table_outlined"
+                            app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:padding="20dp"
+                            android:background="@drawable/border_table_outlined"
+                            app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
+                    </TableRow>
+
+                    <!-- Repeat the TableRow with appropriate data for the remaining rows -->
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/black"
+                            android:padding="4dp"
+                            android:background="@drawable/border_table_outlined"
+                            android:text="Saya berusaha untuk percaya diri."
+                            android:inputType="textMultiLine"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border_table_outlined"
+                            android:padding="10dp"
+                            app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border_table_outlined"
+                            android:padding="10dp"
+                            app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/black"
+                            android:padding="4dp"
+                            android:background="@drawable/border_table_outlined"
+                            android:text="Saya bertanggung jawab atas tugas-tugas yang diberikan kepada saya."
+                            android:inputType="textMultiLine"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border_table_outlined"
+                            android:padding="24dp"
+                            app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border_table_outlined"
+                            android:padding="24dp"
+                            app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/black"
+                            android:padding="4dp"
+                            android:background="@drawable/border_table_outlined"
+                            android:text="Saya tidak mudah menyerah ketika menghadapi kesulitan."
+                            android:inputType="textMultiLine"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border_table_outlined"
+                            android:padding="20dp"
+                            app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border_table_outlined"
+                            android:padding="20dp"
+                            app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/black"
+                            android:padding="4dp"
+                            android:background="@drawable/border_table_outlined"
+                            android:text="Saya bisa membantu orang lain yang sedang kesusahan."
+                            android:inputType="textMultiLine"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border_table_outlined"
+                            android:padding="20dp"
+                            app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border_table_outlined"
+                            android:padding="20dp"
+                            app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
+                    </TableRow>
+
+                </TableLayout>
+
+            </HorizontalScrollView>
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/btn_home"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+            app:srcCompat="@drawable/home" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

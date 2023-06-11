@@ -12,6 +12,36 @@
         android:theme="@style/Theme.EModulPengembara"
         tools:targetApi="31">
         <activity
+            android:name=".Mindmap2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MindmapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KarakterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KedatanganActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ImperialismeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ApersepsiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CptpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DaftarIsiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CaraPenggunaanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataDiriActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

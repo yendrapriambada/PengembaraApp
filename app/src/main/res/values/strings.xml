@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">EModulPengembara</string>
+    <string name="karakter_role_playing">Karakter <i>Role Playing</i></string>
+    <string name="mindmap_kesimpulan"><i>Mindmap</i> Kesimpulan</string>
 </resources>

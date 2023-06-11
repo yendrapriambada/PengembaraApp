@@ -98,10 +98,10 @@ class DaftarIsiActivity : AppCompatActivity() {
             }
 
             btnPustaka.setOnClickListener {
-//                Intent(this@DaftarIsiActivity, BridgingActivity::class.java).also {
-//                    startActivity(it)
-//                }
-//                finish()
+                Intent(this@DaftarIsiActivity, DaftarPustakaActivity::class.java).also {
+                    startActivity(it)
+                }
+                finish()
             }
 
         }

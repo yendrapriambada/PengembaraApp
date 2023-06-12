@@ -16,13 +16,37 @@ class MindmapKesimpulanActivity : AppCompatActivity() {
         binding = ActivityMindmapKesimpulanBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val sharedPref = applicationContext.getSharedPreferences("MyPref", MODE_PRIVATE)
+        val editor = sharedPref.edit()
+
+        val data = listOf(
+            binding.edtKedatangan1, binding.edtKedatangan2, binding.edtKedatangan3,
+            binding.edtFaktor1, binding.edtFaktor2, binding.edtFaktor3,
+            binding.edtPerjuangan1, binding.edtPerjuangan2, binding.edtPerjuangan3, binding.edtImperialisme
+        )
+
+        for (i in data.indices) {
+            val savedDataHasil = sharedPref.getString("dataMindmap${i + 1}", "default").toString()
+            if (savedDataHasil != "default") data[i].setText(savedDataHasil)
+        }
+
         binding.apply {
             btnHome.setOnClickListener {
+                for (i in data.indices) {
+                    editor.putString("dataMindmap${i+1}", data[i].text.toString().trim())
+                }
+                editor.apply()
+
                 backIntent()
             }
         }
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
+                for (i in data.indices) {
+                    editor.putString("dataRolePlaying${i+1}", data[i].text.toString().trim())
+                }
+                editor.apply()
+
                 backIntent()
             }
         })

@@ -135,7 +135,7 @@
             app:layout_constraintVertical_bias="0.1" />
 
         <EditText
-            android:id="@+id/edt_kekurangan3"
+            android:id="@+id/edt_diperbaiki"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_marginEnd="16dp"

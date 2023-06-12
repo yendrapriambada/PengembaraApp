@@ -59,7 +59,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_peristiwa" />
 
         <EditText
-            android:id="@+id/edt_partisipasi"
+            android:id="@+id/edt_peristiwa"
             android:layout_width="0dp"
             android:layout_height="150dp"
             android:background="@color/white"
@@ -82,7 +82,7 @@
             android:text="Perasaan"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edt_partisipasi" />
+            app:layout_constraintTop_toBottomOf="@+id/edt_peristiwa" />
 
         <TextView
             android:id="@+id/tv_perasaan_desc"

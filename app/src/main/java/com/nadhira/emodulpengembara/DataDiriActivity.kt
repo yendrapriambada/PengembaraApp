@@ -14,8 +14,26 @@ class DataDiriActivity : AppCompatActivity() {
         binding = ActivityDataDiriBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val sharedPref = applicationContext.getSharedPreferences("MyPref", MODE_PRIVATE)
+        val editor = sharedPref.edit()
+
+        val data = listOf(
+            binding.edtNama, binding.edtKelas, binding.edtAbsen
+        )
+
+        for (i in data.indices) {
+            val savedDataDiri = sharedPref.getString("dataDiri${i + 1}", "default").toString()
+            if (savedDataDiri != "default") data[i].setText(savedDataDiri)
+        }
+
         binding.apply {
             btnNext.setOnClickListener {
+                for (i in data.indices) {
+                    editor.putString("dataDiri${i+1}", data[i].text.toString().trim())
+                }
+                editor.apply()
+
+
                 Intent(this@DataDiriActivity, CaraPenggunaanActivity::class.java).also {
                     startActivity(it)
                 }

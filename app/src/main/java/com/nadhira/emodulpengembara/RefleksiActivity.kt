@@ -14,8 +14,26 @@ class RefleksiActivity : AppCompatActivity() {
         binding = ActivityRefleksiBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val sharedPref = applicationContext.getSharedPreferences("MyPref", MODE_PRIVATE)
+        val editor = sharedPref.edit()
+
+        val data = listOf(
+            binding.edtPeristiwa, binding.edtPerasaan,
+            binding.edtPenemuan, binding.edtPenerapan,
+        )
+
+        for (i in data.indices) {
+            val savedData = sharedPref.getString("dataRefleksi${i + 1}", "default").toString()
+            if (savedData != "default") data[i].setText(savedData)
+        }
+
         binding.apply {
             btnHome.setOnClickListener {
+                for (i in data.indices) {
+                    editor.putString("dataRefleksi${i+1}", data[i].text.toString().trim())
+                }
+                editor.apply()
+
                 backIntent()
             }
         }

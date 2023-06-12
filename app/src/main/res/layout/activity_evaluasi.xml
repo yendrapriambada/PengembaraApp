@@ -35,8 +35,8 @@
 
         <ImageView
             android:id="@+id/opsi_a"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginStart="24dp"
             app:layout_constraintStart_toStartOf="@+id/soal1"
             app:layout_constraintTop_toBottomOf="@+id/soal1"
@@ -58,8 +58,8 @@
 
         <ImageView
             android:id="@+id/opsi_b"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginStart="24dp"
             android:layout_marginTop="8dp"
             app:layout_constraintStart_toStartOf="@+id/soal1"
@@ -82,8 +82,8 @@
 
         <ImageView
             android:id="@+id/opsi_c"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginStart="24dp"
             android:layout_marginTop="8dp"
             app:layout_constraintStart_toStartOf="@+id/soal1"
@@ -106,8 +106,8 @@
 
         <ImageView
             android:id="@+id/opsi_d"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginStart="24dp"
             android:layout_marginTop="8dp"
             app:layout_constraintStart_toStartOf="@+id/soal1"
@@ -148,8 +148,8 @@
 
         <ImageView
             android:id="@+id/opsi_2a"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginStart="24dp"
             app:layout_constraintStart_toStartOf="@+id/soal2"
             app:layout_constraintTop_toBottomOf="@+id/soal2"
@@ -171,8 +171,8 @@
 
         <ImageView
             android:id="@+id/opsi_2b"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginStart="24dp"
             android:layout_marginTop="8dp"
             app:layout_constraintStart_toStartOf="@+id/soal2"
@@ -195,8 +195,8 @@
 
         <ImageView
             android:id="@+id/opsi_2c"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginStart="24dp"
             android:layout_marginTop="8dp"
             app:layout_constraintStart_toStartOf="@+id/soal2"
@@ -219,8 +219,8 @@
 
         <ImageView
             android:id="@+id/opsi_2d"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginStart="24dp"
             android:layout_marginTop="8dp"
             app:layout_constraintStart_toStartOf="@+id/soal2"
@@ -331,6 +331,7 @@
                             android:textColor="@color/black" />
 
                         <ImageView
+                            android:id="@+id/pernyataan1_yes"
                             android:layout_width="30dp"
                             android:layout_height="match_parent"
                             android:background="@drawable/border_table_outlined"
@@ -338,6 +339,7 @@
                             app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
 
                         <ImageView
+                            android:id="@+id/pernyataan1_no"
                             android:layout_width="30dp"
                             android:layout_height="match_parent"
                             android:background="@drawable/border_table_outlined"
@@ -361,6 +363,7 @@
                             android:textColor="@color/black" />
 
                         <ImageView
+                            android:id="@+id/pernyataan2_yes"
                             android:layout_width="30dp"
                             android:layout_height="match_parent"
                             android:background="@drawable/border_table_outlined"
@@ -368,6 +371,7 @@
                             app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
 
                         <ImageView
+                            android:id="@+id/pernyataan2_no"
                             android:layout_width="30dp"
                             android:layout_height="match_parent"
                             android:background="@drawable/border_table_outlined"
@@ -390,6 +394,7 @@
                             android:textColor="@color/black" />
 
                         <ImageView
+                            android:id="@+id/pernyataan3_yes"
                             android:layout_width="30dp"
                             android:layout_height="match_parent"
                             android:background="@drawable/border_table_outlined"
@@ -397,6 +402,7 @@
                             app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
 
                         <ImageView
+                            android:id="@+id/pernyataan3_no"
                             android:layout_width="30dp"
                             android:layout_height="match_parent"
                             android:background="@drawable/border_table_outlined"
@@ -427,6 +433,7 @@
             android:id="@+id/edt_soal4"
             android:layout_width="0dp"
             android:layout_height="150dp"
+            android:layout_marginTop="8dp"
             android:background="@color/white"
             android:fontFamily="@font/poppins_medium"
             android:hint="Masukkan jawaban disini"

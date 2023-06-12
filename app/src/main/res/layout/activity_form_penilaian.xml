@@ -97,6 +97,7 @@
                             android:inputType="textMultiLine"/>
 
                         <ImageView
+                            android:id="@+id/pernyataan1_yes"
                             android:layout_width="30dp"
                             android:layout_height="match_parent"
                             android:padding="20dp"
@@ -104,6 +105,7 @@
                             app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
 
                         <ImageView
+                            android:id="@+id/pernyataan1_no"
                             android:layout_width="30dp"
                             android:layout_height="match_parent"
                             android:padding="20dp"
@@ -127,6 +129,7 @@
                             android:inputType="textMultiLine"/>
 
                         <ImageView
+                            android:id="@+id/pernyataan2_yes"
                             android:layout_width="30dp"
                             android:layout_height="match_parent"
                             android:background="@drawable/border_table_outlined"
@@ -134,6 +137,7 @@
                             app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
 
                         <ImageView
+                            android:id="@+id/pernyataan2_no"
                             android:layout_width="30dp"
                             android:layout_height="match_parent"
                             android:background="@drawable/border_table_outlined"
@@ -156,6 +160,7 @@
                             android:inputType="textMultiLine"/>
 
                         <ImageView
+                            android:id="@+id/pernyataan3_yes"
                             android:layout_width="30dp"
                             android:layout_height="match_parent"
                             android:background="@drawable/border_table_outlined"
@@ -163,6 +168,7 @@
                             app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
 
                         <ImageView
+                            android:id="@+id/pernyataan3_no"
                             android:layout_width="30dp"
                             android:layout_height="match_parent"
                             android:background="@drawable/border_table_outlined"
@@ -184,6 +190,7 @@
                             android:inputType="textMultiLine"/>
 
                         <ImageView
+                            android:id="@+id/pernyataan4_yes"
                             android:layout_width="30dp"
                             android:layout_height="match_parent"
                             android:background="@drawable/border_table_outlined"
@@ -191,6 +198,7 @@
                             app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
 
                         <ImageView
+                            android:id="@+id/pernyataan4_no"
                             android:layout_width="30dp"
                             android:layout_height="match_parent"
                             android:background="@drawable/border_table_outlined"
@@ -212,6 +220,7 @@
                             android:inputType="textMultiLine"/>
 
                         <ImageView
+                            android:id="@+id/pernyataan5_yes"
                             android:layout_width="30dp"
                             android:layout_height="match_parent"
                             android:background="@drawable/border_table_outlined"
@@ -219,6 +228,7 @@
                             app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
 
                         <ImageView
+                            android:id="@+id/pernyataan5_no"
                             android:layout_width="30dp"
                             android:layout_height="match_parent"
                             android:background="@drawable/border_table_outlined"

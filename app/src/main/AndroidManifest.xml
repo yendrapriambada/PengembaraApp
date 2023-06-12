@@ -13,7 +13,8 @@
         tools:targetApi="31">
         <activity
             android:name=".EvaluasiActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".RefleksiActivity"
             android:exported="false"

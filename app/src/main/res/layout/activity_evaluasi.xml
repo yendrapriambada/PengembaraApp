@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AA9473"
+    tools:context=".EvaluasiActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ayo_berlatih" />
+
+        <ImageView
+            android:id="@+id/soal1"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6"
+            app:srcCompat="@drawable/evaluasi_1" />
+
+        <ImageView
+            android:id="@+id/opsi_a"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="24dp"
+            app:layout_constraintStart_toStartOf="@+id/soal1"
+            app:layout_constraintTop_toBottomOf="@+id/soal1"
+            app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Imperialisme adalah penjajahan untuk mendapatkan keuntungan lebih besar."
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/opsi_a"
+            app:layout_constraintTop_toTopOf="@+id/opsi_a" />
+
+        <ImageView
+            android:id="@+id/opsi_b"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/soal1"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Imperialisme adalah penjajahan untuk mendapatkan kekuasaan dan keuntungan yang lebih besar."
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/opsi_b"
+            app:layout_constraintTop_toTopOf="@+id/opsi_b" />
+
+        <ImageView
+            android:id="@+id/opsi_c"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/soal1"
+            app:layout_constraintTop_toBottomOf="@+id/textView7"
+            app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Imperialisme adalah penjajahan untuk perluasaan kekuasaan di negara jajahan."
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/opsi_c"
+            app:layout_constraintTop_toTopOf="@+id/opsi_c" />
+
+        <ImageView
+            android:id="@+id/opsi_d"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/soal1"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Imperialisme adalah penjajahan yang tidak berakhir hingga sekarang."
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/opsi_d"
+            app:layout_constraintTop_toTopOf="@+id/opsi_d" />
+
+
+
+
+
+
+
+
+        <ImageView
+            android:id="@+id/soal2"
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            app:srcCompat="@drawable/evaluasi_2" />
+
+        <ImageView
+            android:id="@+id/opsi_2a"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="24dp"
+            app:layout_constraintStart_toStartOf="@+id/soal2"
+            app:layout_constraintTop_toBottomOf="@+id/soal2"
+            app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
+
+        <TextView
+            android:id="@+id/desc_2a"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="1, 2, dan 3"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/opsi_2a"
+            app:layout_constraintTop_toTopOf="@+id/opsi_2a" />
+
+        <ImageView
+            android:id="@+id/opsi_2b"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/soal2"
+            app:layout_constraintTop_toBottomOf="@+id/desc_2a"
+            app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
+
+        <TextView
+            android:id="@+id/desc_2b"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="1, 2, dan 4"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/opsi_2b"
+            app:layout_constraintTop_toTopOf="@+id/opsi_2b" />
+
+        <ImageView
+            android:id="@+id/opsi_2c"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/soal2"
+            app:layout_constraintTop_toBottomOf="@+id/desc_2b"
+            app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
+
+        <TextView
+            android:id="@+id/desc_2c"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="1, 3, dan 4"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/opsi_2c"
+            app:layout_constraintTop_toTopOf="@+id/opsi_2c" />
+
+        <ImageView
+            android:id="@+id/opsi_2d"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/soal2"
+            app:layout_constraintTop_toBottomOf="@+id/desc_2c"
+            app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="2, 3 dan 4"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/opsi_2d"
+            app:layout_constraintTop_toTopOf="@+id/opsi_2d" />
+
+
+
+
+
+
+        <ImageView
+            android:id="@+id/soal3"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10"
+            app:srcCompat="@drawable/evaluasi_3" />
+
+        <ScrollView
+            android:id="@+id/tableLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:paddingBottom="16dp"
+            android:scrollbars="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/soal3">
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dip"
+                android:scrollbars="horizontal|vertical">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="@+id/desc1"
+                    app:layout_constraintStart_toStartOf="@+id/desc1"
+                    app:layout_constraintTop_toBottomOf="@+id/desc1">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="180dp"
+                            android:background="@drawable/border_table"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Bentuk Perlawanan"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:background="@drawable/border_table"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Benar"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:background="@drawable/border_table"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Salah"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:background="@drawable/border_table_outlined"
+                            android:fontFamily="@font/poppins_medium"
+                            android:inputType="textMultiLine"
+                            android:padding="4dp"
+                            android:text="Perlawanan Palembang terhadap Inggris"
+                            android:textColor="@color/black" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border_table_outlined"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border_table_outlined"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
+                    </TableRow>
+
+                    <!-- Repeat the TableRow with appropriate data for the remaining rows -->
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:background="@drawable/border_table_outlined"
+                            android:fontFamily="@font/poppins_medium"
+                            android:inputType="textMultiLine"
+                            android:padding="4dp"
+                            android:text="Perlawanan Demak terhadap Spanyol"
+                            android:textColor="@color/black" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border_table_outlined"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border_table_outlined"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:background="@drawable/border_table_outlined"
+                            android:fontFamily="@font/poppins_medium"
+                            android:inputType="textMultiLine"
+                            android:padding="4dp"
+                            android:text="Perlawanan Aceh terhadap Portugis"
+                            android:textColor="@color/black" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border_table_outlined"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border_table_outlined"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/outline_check_box_outline_blank_24" />
+                    </TableRow>
+
+
+                </TableLayout>
+
+            </HorizontalScrollView>
+        </ScrollView>
+
+
+
+        <ImageView
+            android:id="@+id/soal4"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+            app:srcCompat="@drawable/evaluasi_4" />
+
+        <EditText
+            android:id="@+id/edt_soal4"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:background="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Masukkan jawaban disini"
+            android:padding="10dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/soal4"
+            app:layout_constraintStart_toStartOf="@+id/soal4"
+            app:layout_constraintTop_toBottomOf="@+id/soal4" />
+
+
+        <ImageView
+            android:id="@+id/soal5"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_soal4"
+            app:srcCompat="@drawable/evaluasi_5" />
+
+        <EditText
+            android:id="@+id/edt_soal5"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:background="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"
+            android:hint="Masukkan jawaban disini"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/soal5"
+            app:layout_constraintStart_toStartOf="@+id/soal5"
+            app:layout_constraintTop_toBottomOf="@+id/soal5" />
+
+
+
+
+
+        <ImageView
+            android:id="@+id/soal6"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_soal5"
+            app:srcCompat="@drawable/evaluasi_6" />
+
+        <EditText
+            android:id="@+id/edt_soal6"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:background="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Masukkan jawaban disini"
+            android:padding="10dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/soal6"
+            app:layout_constraintStart_toStartOf="@+id/soal6"
+            app:layout_constraintTop_toBottomOf="@+id/soal6" />
+
+
+        <ImageView
+            android:id="@+id/btn_next"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_soal6"
+            app:srcCompat="@drawable/button_next" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

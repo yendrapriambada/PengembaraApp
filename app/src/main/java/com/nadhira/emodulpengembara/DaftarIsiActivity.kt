@@ -77,24 +77,24 @@ class DaftarIsiActivity : AppCompatActivity() {
             }
 
             btnMindmap.setOnClickListener {
-//                Intent(this@DaftarIsiActivity, BridgingActivity::class.java).also {
-//                    startActivity(it)
-//                }
-//                finish()
+                Intent(this@DaftarIsiActivity, MindmapKesimpulanActivity::class.java).also {
+                    startActivity(it)
+                }
+                finish()
             }
 
             btnRefleksi.setOnClickListener {
-//                Intent(this@DaftarIsiActivity, BridgingActivity::class.java).also {
-//                    startActivity(it)
-//                }
-//                finish()
+                Intent(this@DaftarIsiActivity, RefleksiActivity::class.java).also {
+                    startActivity(it)
+                }
+                finish()
             }
 
             btnEvaluasi.setOnClickListener {
-//                Intent(this@DaftarIsiActivity, BridgingActivity::class.java).also {
-//                    startActivity(it)
-//                }
-//                finish()
+                Intent(this@DaftarIsiActivity, EvaluasiActivity::class.java).also {
+                    startActivity(it)
+                }
+                finish()
             }
 
             btnPustaka.setOnClickListener {

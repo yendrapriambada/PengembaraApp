@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AA9473"
+    tools:context=".RefleksiActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ayo_menilai" />
+
+        <TextView
+            android:id="@+id/tv_daftarisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/boldenvan"
+            android:text="REFLEKSI 4P"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+        <TextView
+            android:id="@+id/tv_peristiwa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/boldenvan"
+            android:text="Peristiwa"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_daftarisi" />
+
+        <TextView
+            android:id="@+id/tv_peristiwa_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Apa yang kamu pelajari hari ini? Apakah ada materi yang  sulit kamu pahami?"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_peristiwa" />
+
+        <EditText
+            android:id="@+id/edt_partisipasi"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:background="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"
+            android:hint="Masukkan jawaban disini"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_peristiwa_desc"
+            app:layout_constraintStart_toStartOf="@+id/tv_peristiwa_desc"
+            app:layout_constraintTop_toBottomOf="@+id/tv_peristiwa_desc" />
+
+
+        <TextView
+            android:id="@+id/tv_perasaan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/boldenvan"
+            android:text="Perasaan"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_partisipasi" />
+
+        <TextView
+            android:id="@+id/tv_perasaan_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Apa yang kamu rasakan saat menemukan materi yang sulit kamu pahami?"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_perasaan" />
+
+        <EditText
+            android:id="@+id/edt_perasaan"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"
+            android:hint="Masukkan jawaban disini"
+            android:padding="10dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/tv_perasaan_desc"
+            app:layout_constraintStart_toStartOf="@+id/tv_perasaan_desc"
+            app:layout_constraintTop_toBottomOf="@+id/tv_perasaan_desc" />
+
+
+
+        <TextView
+            android:id="@+id/tv_penemuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/boldenvan"
+            android:text="Penemuan"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_perasaan" />
+
+        <TextView
+            android:id="@+id/tv_penemuan_desc2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Apa hal baru  yang kamu temukan pada pembelajaran hari ini?"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_penemuan" />
+
+        <EditText
+            android:id="@+id/edt_penemuan"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:background="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"
+            android:hint="Masukkan jawaban disini"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_penemuan_desc2"
+            app:layout_constraintStart_toStartOf="@+id/tv_penemuan_desc2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_penemuan_desc2" />
+
+
+
+
+        <TextView
+            android:id="@+id/tv_penerapan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/boldenvan"
+            android:text="Penerapan"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_penemuan" />
+
+        <TextView
+            android:id="@+id/tv_penerapan_desc2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Apa hal baru  yang kamu temukan pada pembelajaran hari ini?"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_penerapan" />
+
+        <EditText
+            android:id="@+id/edt_penerapan"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:background="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"
+            android:hint="Masukkan jawaban disini"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_penerapan_desc2"
+            app:layout_constraintStart_toStartOf="@+id/tv_penerapan_desc2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_penerapan_desc2" />
+
+        <ImageView
+            android:id="@+id/btn_home"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_penerapan"
+            app:srcCompat="@drawable/home" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

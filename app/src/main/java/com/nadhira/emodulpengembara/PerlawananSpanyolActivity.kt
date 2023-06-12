@@ -16,10 +16,7 @@ class PerlawananSpanyolActivity : AppCompatActivity() {
 
         binding.apply {
             btnPrev.setOnClickListener {
-                Intent(this@PerlawananSpanyolActivity, Perjuangan2Activity::class.java).also {
-                    startActivity(it)
-                }
-                finish()
+                backIntent()
             }
             btnNext.setOnClickListener {
                 Intent(this@PerlawananSpanyolActivity, PerlawananInggrisActivity::class.java).also {
@@ -36,7 +33,7 @@ class PerlawananSpanyolActivity : AppCompatActivity() {
     }
 
     private fun backIntent() {
-        Intent(this@PerlawananSpanyolActivity, DaftarIsiActivity::class.java).also {
+        Intent(this@PerlawananSpanyolActivity, Perjuangan2Activity::class.java).also {
             startActivity(it)
         }
         finish()

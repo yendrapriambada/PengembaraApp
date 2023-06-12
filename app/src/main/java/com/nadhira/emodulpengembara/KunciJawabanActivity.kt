@@ -16,10 +16,7 @@ class KunciJawabanActivity : AppCompatActivity() {
 
         binding.apply {
             btnHome.setOnClickListener {
-                Intent(this@KunciJawabanActivity, DaftarIsiActivity::class.java).also {
-                    startActivity(it)
-                }
-                finish()
+                backIntent()
             }
         }
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {

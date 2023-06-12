@@ -79,7 +79,7 @@
             android:background="@color/white"
             android:fontFamily="@font/poppins_medium"
             android:padding="6dp"
-            android:text="Mengapa bangsa Eropa sangat menginginkan rempah-rempah?"
+            android:text="Apa hubungan rempah-rempah dan penjajahan di Indonesia?"
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/imageView4"

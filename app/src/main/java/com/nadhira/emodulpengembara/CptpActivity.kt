@@ -16,10 +16,7 @@ class CptpActivity : AppCompatActivity() {
 
         binding.apply {
             btnHome.setOnClickListener {
-                Intent(this@CptpActivity, DaftarIsiActivity::class.java).also {
-                    startActivity(it)
-                }
-                finish()
+                backIntent()
             }
         }
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {

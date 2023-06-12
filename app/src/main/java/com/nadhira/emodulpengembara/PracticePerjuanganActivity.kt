@@ -32,7 +32,7 @@ class PracticePerjuanganActivity : AppCompatActivity() {
             }
             btnNext.setOnClickListener {
                 for (i in data.indices) {
-                    editor.putString("dataPractice${i+1}", data[i].text.toString().trim())
+                    editor.putString("dataPractice${i + 1}", data[i].text.toString().trim())
                 }
                 editor.apply()
 

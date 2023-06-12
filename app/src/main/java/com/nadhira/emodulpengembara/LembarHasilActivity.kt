@@ -18,19 +18,32 @@ class LembarHasilActivity : AppCompatActivity() {
         val editor = sharedPref.edit()
 
         val data = listOf(
-            binding.edtKelompok, binding.edtPartisipasi, binding.edtPenghayatan1, binding.edtPenghayatan2, binding.edtPenghayatan3, binding.edtKerjasama, binding.edtCatatan1,
-            binding.edtKelompok2, binding.edtPartisipasi2, binding.edtPenghayatan4, binding.edtPenghayatan5, binding.edtPenghayatan6, binding.edtKerjasama2, binding.edtCatatan2,
+            binding.edtKelompok,
+            binding.edtPartisipasi,
+            binding.edtPenghayatan1,
+            binding.edtPenghayatan2,
+            binding.edtPenghayatan3,
+            binding.edtKerjasama,
+            binding.edtCatatan1,
+            binding.edtKelompok2,
+            binding.edtPartisipasi2,
+            binding.edtPenghayatan4,
+            binding.edtPenghayatan5,
+            binding.edtPenghayatan6,
+            binding.edtKerjasama2,
+            binding.edtCatatan2,
         )
 
         for (i in data.indices) {
-            val savedDataHasil = sharedPref.getString("dataRolePlaying${i + 1}", "default").toString()
+            val savedDataHasil =
+                sharedPref.getString("dataRolePlaying${i + 1}", "default").toString()
             if (savedDataHasil != "default") data[i].setText(savedDataHasil)
         }
 
         binding.apply {
             btnNext.setOnClickListener {
                 for (i in data.indices) {
-                    editor.putString("dataRolePlaying${i+1}", data[i].text.toString().trim())
+                    editor.putString("dataRolePlaying${i + 1}", data[i].text.toString().trim())
                 }
                 editor.apply()
 

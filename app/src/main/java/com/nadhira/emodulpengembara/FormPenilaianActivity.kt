@@ -39,24 +39,28 @@ class FormPenilaianActivity : AppCompatActivity() {
             val pernyataanValue = sharedPref.getString(pernyataanKey, "default")
 
             // Set the image resource based on the retrieved value
-            val yesDrawable = if (pernyataanValue == "nyala") {
-                R.drawable.outline_check_box_24
-            }
-            else if (pernyataanValue == "default"){
-                R.drawable.outline_check_box_outline_blank_24
-            }
-            else {
-                R.drawable.outline_check_box_outline_blank_24
+            val yesDrawable = when (pernyataanValue) {
+                "nyala" -> {
+                    R.drawable.outline_check_box_24
+                }
+                "default" -> {
+                    R.drawable.outline_check_box_outline_blank_24
+                }
+                else -> {
+                    R.drawable.outline_check_box_outline_blank_24
+                }
             }
 
-            val noDrawable = if (pernyataanValue == "mati") {
-                R.drawable.outline_check_box_24
-            }
-            else if (pernyataanValue == "default"){
-                R.drawable.outline_check_box_outline_blank_24
-            }
-            else {
-                R.drawable.outline_check_box_outline_blank_24
+            val noDrawable = when (pernyataanValue) {
+                "mati" -> {
+                    R.drawable.outline_check_box_24
+                }
+                "default" -> {
+                    R.drawable.outline_check_box_outline_blank_24
+                }
+                else -> {
+                    R.drawable.outline_check_box_outline_blank_24
+                }
             }
 
             yesButton.setImageResource(yesDrawable)
@@ -78,12 +82,6 @@ class FormPenilaianActivity : AppCompatActivity() {
                 editor.putString(pernyataanKey, "mati").apply()
             }
         }
-
-
-
-
-
-
 
         binding.apply {
             btnHome.setOnClickListener {

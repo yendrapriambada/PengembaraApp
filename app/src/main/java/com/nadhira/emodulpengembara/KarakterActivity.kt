@@ -16,10 +16,7 @@ class KarakterActivity : AppCompatActivity() {
 
         binding.apply {
             btnHome.setOnClickListener {
-                Intent(this@KarakterActivity, DaftarIsiActivity::class.java).also {
-                    startActivity(it)
-                }
-                finish()
+                backIntent()
             }
         }
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {

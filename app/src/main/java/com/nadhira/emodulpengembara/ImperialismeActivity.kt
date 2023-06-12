@@ -1,10 +1,9 @@
 package com.nadhira.emodulpengembara
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.OnBackPressedCallback
-import com.nadhira.emodulpengembara.databinding.ActivityCptpactivityBinding
+import androidx.appcompat.app.AppCompatActivity
 import com.nadhira.emodulpengembara.databinding.ActivityImperialismeBinding
 
 class ImperialismeActivity : AppCompatActivity() {
@@ -31,7 +30,7 @@ class ImperialismeActivity : AppCompatActivity() {
     }
 
     private fun backIntent() {
-        Intent(this@ImperialismeActivity, DaftarIsiActivity::class.java).also {
+        Intent(this@ImperialismeActivity, ApersepsiActivity::class.java).also {
             startActivity(it)
         }
         finish()

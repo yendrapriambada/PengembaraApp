@@ -1,10 +1,9 @@
 package com.nadhira.emodulpengembara
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.OnBackPressedCallback
-import com.nadhira.emodulpengembara.databinding.ActivityCaraPenggunaanBinding
+import androidx.appcompat.app.AppCompatActivity
 import com.nadhira.emodulpengembara.databinding.ActivityDaftarIsiBinding
 
 class DaftarIsiActivity : AppCompatActivity() {
@@ -28,7 +27,7 @@ class DaftarIsiActivity : AppCompatActivity() {
             }
 
             btnImperialisme.setOnClickListener {
-                Intent(this@DaftarIsiActivity, ImperialismeActivity::class.java).also {
+                Intent(this@DaftarIsiActivity, ApersepsiActivity::class.java).also {
                     startActivity(it)
                 }
                 finish()

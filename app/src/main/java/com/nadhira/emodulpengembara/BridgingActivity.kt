@@ -1,11 +1,10 @@
 package com.nadhira.emodulpengembara
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.OnBackPressedCallback
+import androidx.appcompat.app.AppCompatActivity
 import com.nadhira.emodulpengembara.databinding.ActivityBridgingBinding
-import com.nadhira.emodulpengembara.databinding.ActivityPerjuanganBinding
 
 class BridgingActivity : AppCompatActivity() {
     private lateinit var binding: ActivityBridgingBinding

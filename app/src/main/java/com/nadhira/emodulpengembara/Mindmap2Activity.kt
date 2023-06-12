@@ -30,7 +30,7 @@ class Mindmap2Activity : AppCompatActivity() {
     }
 
     private fun backIntent() {
-        Intent(this@Mindmap2Activity, DaftarIsiActivity::class.java).also {
+        Intent(this@Mindmap2Activity, MindmapActivity::class.java).also {
             startActivity(it)
         }
         finish()

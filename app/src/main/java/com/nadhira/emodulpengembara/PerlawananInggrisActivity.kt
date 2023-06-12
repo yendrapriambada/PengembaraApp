@@ -1,11 +1,10 @@
 package com.nadhira.emodulpengembara
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.OnBackPressedCallback
+import androidx.appcompat.app.AppCompatActivity
 import com.nadhira.emodulpengembara.databinding.ActivityPerlawananInggrisBinding
-import com.nadhira.emodulpengembara.databinding.ActivityPerlawananSpanyolBinding
 
 class PerlawananInggrisActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPerlawananInggrisBinding
@@ -17,13 +16,13 @@ class PerlawananInggrisActivity : AppCompatActivity() {
 
         binding.apply {
             btnPrev.setOnClickListener {
-                Intent(this@PerlawananInggrisActivity, PerlawananSpanyolActivity::class.java).also {
-                    startActivity(it)
-                }
-                finish()
+                backIntent()
             }
             btnNext.setOnClickListener {
-                Intent(this@PerlawananInggrisActivity, PracticePerjuanganActivity::class.java).also {
+                Intent(
+                    this@PerlawananInggrisActivity,
+                    PracticePerjuanganActivity::class.java
+                ).also {
                     startActivity(it)
                 }
                 finish()
@@ -37,7 +36,7 @@ class PerlawananInggrisActivity : AppCompatActivity() {
     }
 
     private fun backIntent() {
-        Intent(this@PerlawananInggrisActivity, DaftarIsiActivity::class.java).also {
+        Intent(this@PerlawananInggrisActivity, PerlawananSpanyolActivity::class.java).also {
             startActivity(it)
         }
         finish()

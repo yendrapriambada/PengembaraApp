@@ -53,9 +53,7 @@ class SkenarioActivity : AppCompatActivity() {
                 atribut = "skenarioSpanyol"
 
                 intentPrev =
-                    Intent(this@SkenarioActivity, SkenarioActivity::class.java).also {
-                        it.putExtra(EXTRA_FROM, 1)
-                    }
+                    Intent(this@SkenarioActivity, BridgingActivity::class.java)
                 intentNext =
                     Intent(this@SkenarioActivity, SkenarioActivity::class.java).also {
                         it.putExtra(EXTRA_FROM, 3)
@@ -76,9 +74,7 @@ class SkenarioActivity : AppCompatActivity() {
                 atribut = "skenarioInggris"
 
                 intentPrev =
-                    Intent(this@SkenarioActivity, SkenarioActivity::class.java).also {
-                        it.putExtra(EXTRA_FROM, 2)
-                    }
+                    Intent(this@SkenarioActivity, BridgingActivity::class.java)
             }
         }
 

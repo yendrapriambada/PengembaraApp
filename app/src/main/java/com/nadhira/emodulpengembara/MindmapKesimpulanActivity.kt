@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.View
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
-import com.nadhira.emodulpengembara.databinding.ActivityLembarHasilBinding
 import com.nadhira.emodulpengembara.databinding.ActivityMindmapKesimpulanBinding
 
 class MindmapKesimpulanActivity : AppCompatActivity() {
@@ -20,9 +19,16 @@ class MindmapKesimpulanActivity : AppCompatActivity() {
         val editor = sharedPref.edit()
 
         val data = listOf(
-            binding.edtKedatangan1, binding.edtKedatangan2, binding.edtKedatangan3,
-            binding.edtFaktor1, binding.edtFaktor2, binding.edtFaktor3,
-            binding.edtPerjuangan1, binding.edtPerjuangan2, binding.edtPerjuangan3, binding.edtImperialisme
+            binding.edtKedatangan1,
+            binding.edtKedatangan2,
+            binding.edtKedatangan3,
+            binding.edtFaktor1,
+            binding.edtFaktor2,
+            binding.edtFaktor3,
+            binding.edtPerjuangan1,
+            binding.edtPerjuangan2,
+            binding.edtPerjuangan3,
+            binding.edtImperialisme
         )
 
         for (i in data.indices) {
@@ -33,7 +39,7 @@ class MindmapKesimpulanActivity : AppCompatActivity() {
         binding.apply {
             btnHome.setOnClickListener {
                 for (i in data.indices) {
-                    editor.putString("dataMindmap${i+1}", data[i].text.toString().trim())
+                    editor.putString("dataMindmap${i + 1}", data[i].text.toString().trim())
                 }
                 editor.apply()
 
@@ -43,7 +49,7 @@ class MindmapKesimpulanActivity : AppCompatActivity() {
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
                 for (i in data.indices) {
-                    editor.putString("dataRolePlaying${i+1}", data[i].text.toString().trim())
+                    editor.putString("dataRolePlaying${i + 1}", data[i].text.toString().trim())
                 }
                 editor.apply()
 

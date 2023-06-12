@@ -16,10 +16,7 @@ class KedatanganActivity : AppCompatActivity() {
 
         binding.apply {
             btnHome.setOnClickListener {
-                Intent(this@KedatanganActivity, DaftarIsiActivity::class.java).also {
-                    startActivity(it)
-                }
-                finish()
+                backIntent()
             }
         }
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {

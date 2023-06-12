@@ -14,8 +14,25 @@ class ApersepsiActivity : AppCompatActivity() {
         binding = ActivityApersepsiBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val sharedPref = applicationContext.getSharedPreferences("MyPref", MODE_PRIVATE)
+        val editor = sharedPref.edit()
+
+        val data = listOf(
+            binding.edtJawaban1, binding.edtJawaban2
+        )
+
+        for (i in data.indices) {
+            val savedData = sharedPref.getString("dataApersepsi${i + 1}", "default").toString()
+            if (savedData != "default") data[i].setText(savedData)
+        }
+
         binding.apply {
             btnNext.setOnClickListener {
+                for (i in data.indices) {
+                    editor.putString("dataApersepsi${i + 1}", data[i].text.toString().trim())
+                }
+                editor.apply()
+
                 Intent(this@ApersepsiActivity, ImperialismeActivity::class.java).also {
                     startActivity(it)
                 }

@@ -29,11 +29,14 @@ class LembarHasil2Activity : AppCompatActivity() {
         binding.apply {
             btnHome.setOnClickListener {
                 for (i in data.indices) {
-                    editor.putString("dataLembarEvaluasi${i+1}", data[i].text.toString().trim())
+                    editor.putString("dataLembarEvaluasi${i + 1}", data[i].text.toString().trim())
                 }
                 editor.apply()
 
-                backIntent()
+                Intent(this@LembarHasil2Activity, DaftarIsiActivity::class.java).also {
+                    startActivity(it)
+                }
+                finish()
             }
         }
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
@@ -44,7 +47,7 @@ class LembarHasil2Activity : AppCompatActivity() {
     }
 
     private fun backIntent() {
-        Intent(this@LembarHasil2Activity, DaftarIsiActivity::class.java).also {
+        Intent(this@LembarHasil2Activity, LembarHasilActivity::class.java).also {
             startActivity(it)
         }
         finish()

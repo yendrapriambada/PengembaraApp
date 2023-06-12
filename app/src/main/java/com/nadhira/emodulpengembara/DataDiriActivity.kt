@@ -29,7 +29,7 @@ class DataDiriActivity : AppCompatActivity() {
         binding.apply {
             btnNext.setOnClickListener {
                 for (i in data.indices) {
-                    editor.putString("dataDiri${i+1}", data[i].text.toString().trim())
+                    editor.putString("dataDiri${i + 1}", data[i].text.toString().trim())
                 }
                 editor.apply()
 

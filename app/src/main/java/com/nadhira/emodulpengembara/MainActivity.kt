@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.apply {
             btnNext.setOnClickListener {
-                Intent(this@MainActivity, DataDiriActivity::class.java).also {
+                Intent(this@MainActivity, QuoteActivity::class.java).also {
                     startActivity(it)
                 }
                 finish()

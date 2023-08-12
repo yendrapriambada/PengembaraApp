@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#AA9473"
+    android:background="@drawable/my_gradient_drawable"
     tools:context=".RefleksiActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -29,6 +29,7 @@
             android:fontFamily="@font/boldenvan"
             android:text="REFLEKSI 4P"
             android:textSize="28sp"
+            android:textColor="#F6F1E0"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView6" />
@@ -42,6 +43,7 @@
             android:fontFamily="@font/boldenvan"
             android:text="Peristiwa"
             android:textSize="14sp"
+            android:textColor="#F6F1E0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_daftarisi" />
 
@@ -54,6 +56,7 @@
             android:fontFamily="@font/poppins_medium"
             android:text="Apa yang kamu pelajari hari ini? Apakah ada materi yang  sulit kamu pahami?"
             android:textSize="12sp"
+            android:textColor="#F6F1E0"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_peristiwa" />
@@ -81,6 +84,7 @@
             android:fontFamily="@font/boldenvan"
             android:text="Perasaan"
             android:textSize="14sp"
+            android:textColor="#F6F1E0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/edt_peristiwa" />
 
@@ -93,6 +97,7 @@
             android:fontFamily="@font/poppins_medium"
             android:text="Apa yang kamu rasakan saat menemukan materi yang sulit kamu pahami?"
             android:textSize="12sp"
+            android:textColor="#F6F1E0"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_perasaan" />
@@ -121,6 +126,7 @@
             android:fontFamily="@font/boldenvan"
             android:text="Penemuan"
             android:textSize="14sp"
+            android:textColor="#F6F1E0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/edt_perasaan" />
 
@@ -133,6 +139,7 @@
             android:fontFamily="@font/poppins_medium"
             android:text="Apa hal baru  yang kamu temukan pada pembelajaran hari ini?"
             android:textSize="12sp"
+            android:textColor="#F6F1E0"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_penemuan" />
@@ -162,6 +169,7 @@
             android:fontFamily="@font/boldenvan"
             android:text="Penerapan"
             android:textSize="14sp"
+            android:textColor="#F6F1E0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/edt_penemuan" />
 
@@ -174,6 +182,7 @@
             android:fontFamily="@font/poppins_medium"
             android:text="Apa hal baru  yang kamu temukan pada pembelajaran hari ini?"
             android:textSize="12sp"
+            android:textColor="#F6F1E0"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_penerapan" />

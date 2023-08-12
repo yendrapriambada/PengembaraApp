@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#AA9473"
+    android:background="@drawable/my_gradient_drawable"
     tools:context=".EvaluasiActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -50,8 +50,8 @@
             android:layout_marginEnd="16dp"
             android:fontFamily="@font/poppins_medium"
             android:text="Imperialisme adalah penjajahan untuk mendapatkan keuntungan lebih besar."
-            android:textColor="@color/black"
             android:textSize="12sp"
+            android:textColor="#F6F1E0"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/opsi_a"
             app:layout_constraintTop_toTopOf="@+id/opsi_a" />
@@ -74,8 +74,8 @@
             android:layout_marginEnd="16dp"
             android:fontFamily="@font/poppins_medium"
             android:text="Imperialisme adalah penjajahan untuk mendapatkan kekuasaan dan keuntungan yang lebih besar."
-            android:textColor="@color/black"
             android:textSize="12sp"
+            android:textColor="#F6F1E0"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/opsi_b"
             app:layout_constraintTop_toTopOf="@+id/opsi_b" />
@@ -98,8 +98,8 @@
             android:layout_marginEnd="16dp"
             android:fontFamily="@font/poppins_medium"
             android:text="Imperialisme adalah penjajahan untuk perluasaan kekuasaan di negara jajahan."
-            android:textColor="@color/black"
             android:textSize="12sp"
+            android:textColor="#F6F1E0"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/opsi_c"
             app:layout_constraintTop_toTopOf="@+id/opsi_c" />
@@ -122,8 +122,8 @@
             android:layout_marginEnd="16dp"
             android:fontFamily="@font/poppins_medium"
             android:text="Imperialisme adalah penjajahan yang tidak berakhir hingga sekarang."
-            android:textColor="@color/black"
             android:textSize="12sp"
+            android:textColor="#F6F1E0"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/opsi_d"
             app:layout_constraintTop_toTopOf="@+id/opsi_d" />
@@ -163,7 +163,7 @@
             android:layout_marginEnd="16dp"
             android:fontFamily="@font/poppins_medium"
             android:text="1, 2, dan 3"
-            android:textColor="@color/black"
+            android:textColor="#F6F1E0"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/opsi_2a"
@@ -187,7 +187,7 @@
             android:layout_marginEnd="16dp"
             android:fontFamily="@font/poppins_medium"
             android:text="1, 2, dan 4"
-            android:textColor="@color/black"
+            android:textColor="#F6F1E0"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/opsi_2b"
@@ -211,7 +211,7 @@
             android:layout_marginEnd="16dp"
             android:fontFamily="@font/poppins_medium"
             android:text="1, 3, dan 4"
-            android:textColor="@color/black"
+            android:textColor="#F6F1E0"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/opsi_2c"
@@ -235,7 +235,7 @@
             android:layout_marginEnd="16dp"
             android:fontFamily="@font/poppins_medium"
             android:text="2, 3 dan 4"
-            android:textColor="@color/black"
+            android:textColor="#F6F1E0"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/opsi_2d"
@@ -295,7 +295,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="Bentuk Perlawanan"
-                            android:textColor="@color/black"
+                            android:textColor="#F6F1E0"
                             android:textStyle="bold" />
 
                         <TextView
@@ -304,7 +304,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="Benar"
-                            android:textColor="@color/black"
+                            android:textColor="#F6F1E0"
                             android:textStyle="bold" />
 
                         <TextView
@@ -313,7 +313,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="Salah"
-                            android:textColor="@color/black"
+                            android:textColor="#F6F1E0"
                             android:textStyle="bold" />
                     </TableRow>
 
@@ -328,7 +328,7 @@
                             android:inputType="textMultiLine"
                             android:padding="4dp"
                             android:text="Perlawanan Palembang terhadap Inggris"
-                            android:textColor="@color/black" />
+                            android:textColor="#F6F1E0" />
 
                         <ImageView
                             android:id="@+id/pernyataan1_yes"
@@ -360,7 +360,7 @@
                             android:inputType="textMultiLine"
                             android:padding="4dp"
                             android:text="Perlawanan Demak terhadap Spanyol"
-                            android:textColor="@color/black" />
+                            android:textColor="#F6F1E0" />
 
                         <ImageView
                             android:id="@+id/pernyataan2_yes"
@@ -391,7 +391,7 @@
                             android:inputType="textMultiLine"
                             android:padding="4dp"
                             android:text="Perlawanan Aceh terhadap Portugis"
-                            android:textColor="@color/black" />
+                            android:textColor="#F6F1E0" />
 
                         <ImageView
                             android:id="@+id/pernyataan3_yes"

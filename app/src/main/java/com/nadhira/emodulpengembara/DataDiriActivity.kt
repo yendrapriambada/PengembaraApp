@@ -48,7 +48,7 @@ class DataDiriActivity : AppCompatActivity() {
     }
 
     private fun backIntent() {
-        Intent(this@DataDiriActivity, MainActivity::class.java).also {
+        Intent(this@DataDiriActivity, QuoteActivity::class.java).also {
             startActivity(it)
         }
         finish()

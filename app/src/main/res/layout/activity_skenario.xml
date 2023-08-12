@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#AA9473"
+    android:background="@drawable/my_gradient_drawable"
     tools:context=".SkenarioActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -31,6 +31,7 @@
             android:gravity="center"
             android:text="Skenario Perlawanan Portugis"
             android:textSize="28sp"
+            android:textColor="#F6F1E0"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView4" />

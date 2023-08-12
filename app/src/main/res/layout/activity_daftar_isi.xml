@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#AA9473"
+    android:background="@drawable/my_gradient_drawable"
     tools:context=".DaftarIsiActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -18,6 +18,7 @@
             android:fontFamily="@font/boldenvan"
             android:text="DAFTAR ISI"
             android:textSize="32sp"
+            android:textColor="#F6F1E0"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -99,8 +100,8 @@
             android:backgroundTint="#FDF6EA"
             android:fontFamily="@font/poppins_extrabold"
             android:padding="10dp"
-            android:paddingStart="30dp"
-            android:paddingEnd="30dp"
+            android:paddingStart="80dp"
+            android:paddingEnd="80dp"
             android:text="Kedatangan Bangsa Barat"
             android:textColor="#814827"
             app:cornerRadius="20dp"
@@ -167,8 +168,8 @@
             android:backgroundTint="#FDF6EA"
             android:fontFamily="@font/poppins_extrabold"
             android:padding="10dp"
-            android:paddingStart="30dp"
-            android:paddingEnd="30dp"
+            android:paddingStart="80dp"
+            android:paddingEnd="80dp"
             android:text="Faktor Penting Imperialisme"
             android:textColor="#814827"
             app:cornerRadius="20dp"
@@ -265,8 +266,8 @@
             android:backgroundTint="#FDF6EA"
             android:fontFamily="@font/poppins_extrabold"
             android:padding="10dp"
-            android:paddingStart="30dp"
-            android:paddingEnd="30dp"
+            android:paddingStart="80dp"
+            android:paddingEnd="80dp"
             android:text="Lembar Hasil Role Playing"
             android:textColor="#814827"
             app:cornerRadius="20dp"
@@ -365,8 +366,8 @@
             android:backgroundTint="#FDF6EA"
             android:fontFamily="@font/poppins_extrabold"
             android:padding="10dp"
-            android:paddingStart="30dp"
-            android:paddingEnd="30dp"
+            android:paddingStart="80dp"
+            android:paddingEnd="80dp"
             android:text="Evaluasi dan Kunci Jawaban"
             android:textColor="#814827"
             app:cornerRadius="20dp"
@@ -421,6 +422,39 @@
             app:layout_constraintTop_toTopOf="@+id/btn_pustaka"
             app:srcCompat="@drawable/botol" />
 
+        <Button
+            android:id="@+id/btn_profil"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:backgroundTint="#FDF6EA"
+            android:fontFamily="@font/poppins_extrabold"
+            android:padding="10dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:text="Profil Penulis"
+            android:textColor="#814827"
+            app:cornerRadius="20dp"
+            android:stateListAnimator="@drawable/customized_state_animator"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_pustaka" />
+
+        <ImageView
+            android:id="@+id/botolterakhir"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="-10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_profil"
+            app:layout_constraintEnd_toEndOf="@+id/btn_profil"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_profil"
+            app:layout_constraintTop_toTopOf="@+id/btn_profil"
+            app:srcCompat="@drawable/botol" />
+
 
         <ImageView
             android:id="@+id/btn_prev"
@@ -431,7 +465,7 @@
             android:layout_marginBottom="24dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/botolterakhir"
             app:srcCompat="@drawable/button_prev" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

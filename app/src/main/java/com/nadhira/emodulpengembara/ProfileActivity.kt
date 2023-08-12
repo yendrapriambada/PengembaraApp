@@ -4,19 +4,22 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
-import com.nadhira.emodulpengembara.databinding.ActivityDaftarPustakaBinding
+import com.nadhira.emodulpengembara.databinding.ActivityProfileBinding
 
-class DaftarPustakaActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityDaftarPustakaBinding
+class ProfileActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityProfileBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityDaftarPustakaBinding.inflate(layoutInflater)
+        binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.apply {
-            btnPrev.setOnClickListener {
-                backIntent()
+            btnNext.setOnClickListener {
+                Intent(this@ProfileActivity, DaftarPustaka2Activity::class.java).also {
+                    startActivity(it)
+                }
+                finish()
             }
         }
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
@@ -27,7 +30,7 @@ class DaftarPustakaActivity : AppCompatActivity() {
     }
 
     private fun backIntent() {
-        Intent(this@DaftarPustakaActivity, DaftarIsiActivity::class.java).also {
+        Intent(this@ProfileActivity, DaftarIsiActivity::class.java).also {
             startActivity(it)
         }
         finish()

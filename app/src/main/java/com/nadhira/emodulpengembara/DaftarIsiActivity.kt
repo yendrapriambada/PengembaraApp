@@ -103,6 +103,13 @@ class DaftarIsiActivity : AppCompatActivity() {
                 finish()
             }
 
+            btnProfil.setOnClickListener {
+                Intent(this@DaftarIsiActivity, ProfileActivity::class.java).also {
+                    startActivity(it)
+                }
+                finish()
+            }
+
         }
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
